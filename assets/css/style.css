@@ -1,8 +1,11 @@
-head{
+header{
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: white;
     height: 85px;
     width: 100%;
+    position: Fixed;
+    Top: 0;
+    z-index: 10;
 }
 
 h1{
@@ -10,25 +13,28 @@ h1{
     background-color: teal;
     width: 250px;
     height: 85px;
-    position: fixed;
+    Position: Fixed;
         left: 250px;
-        top: 0px;
+        top: -20px;
     text-align: center;
     line-height: 85px;
+    z-index: 11;
+    
 }
 .main{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: white;
-    position: relative;
+    position: Absolute;
     margin-top: 50px;
+    margin-bottom: 50px;
     background-color: grey;
     width: 100%;
-    height: 500px;
+    height: 1250px;
     text-align: center;
 }
 
 footer {
-    position:absolute;
+    position:Fixed;
     bottom:0;
     width:100%;
     height:60px;  
@@ -37,6 +43,7 @@ footer {
     border-top: solid;
     border-width: 10px;
     border-color: teal;
+    z-index: 5;
 }
 
 .menu {
@@ -47,6 +54,7 @@ footer {
     text-align: center;
     line-height: 100px;
     color: grey;
+    z-index: 12;
 }
 
 .sidebar{
@@ -56,13 +64,14 @@ footer {
     height: 200px;
     margin-left: 40px;
     background-color: pink;
-    position: relative;
+    position: Fixed;
         right: 220px;
         bottom: 350px;
     text-align: center;    
 }
 
 .maincontent {
+    clear: both;
     float: left;
     width: 650px;
     height: 400px;
@@ -92,3 +101,33 @@ h3{
     margin: 10px;
 
 }
+
+#AboutMePicture {
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+    float: left
+}
+
+.links{
+    position: relative;
+    top: 25px;
+}
+
+.pmaincontent {
+    clear: both;
+    float: left;
+    width: 650px;
+    height: 1000px;
+    background-color: rgb(179, 129, 137);
+    position: relative;
+        left: 200px;
+    margin: 40px;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+  
+#Tech {
+    position: Fixed;
+    Float: left;
+}    
