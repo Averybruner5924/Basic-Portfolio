@@ -281,13 +281,14 @@ h3{
 #name,
 #mail {
     width: 585px;
+    height: 20px;
 }
 
 #contact {
     font-size: 30px;
     color: teal;
     position: absolute;
-    top: -30%;
+    top: -20%;
     text-align: left;
     width: 585px;
     border-bottom: solid;
